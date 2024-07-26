@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+top.cxjfun.common.datasource.sql.SqlAutoConfiguration,\
+  top.cxjfun.common.datasource.nosql.NosqlAutoConfiguration

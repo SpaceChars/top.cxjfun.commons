@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  top.cxjfun.common.web.security.WebSecurityAutoConfig,\
+  top.cxjfun.common.web.mvc.WebRequestAutoConfig,\
+  top.cxjfun.common.web.geo.GeoAutoConfig,\
+  top.cxjfun.common.web.thread.ThreadAutoConfig,\
+  top.cxjfun.common.web.socket.WebSocketAutoConfig,\
+  top.cxjfun.common.web.cron.CronAutoConfig
