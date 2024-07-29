@@ -12,7 +12,13 @@
     <name>cxjfun-commons-oss</name>
     <description>对象储存模块</description>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>top.cxjfun.commons</groupId>
             <artifactId>cxjfun-commons-core</artifactId>

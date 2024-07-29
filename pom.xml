@@ -11,6 +11,29 @@
     <description>top.cxjfun 公共依赖库</description>
     <packaging>pom</packaging>
 
+    <url>https://github.com/SpaceChars/top.cxjfun.commons</url>
+
+    <developers>
+        <developer>
+            <id>2388160949</id>
+            <name>SpaceChars</name>
+            <email>2388160949@qq.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>https://github.com/SpaceChars/top.cxjfun.commons.git</connection>
+        <url>https://github.com/SpaceChars/top.cxjfun.commons</url>
+    </scm>
+
     <properties>
         <edit-box.version>1.0.0</edit-box.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,6 +52,9 @@
         <minio.version>8.2.2</minio.version>
         <lombok.version>1.16.20</lombok.version>
         <validation.version>3.0.5</validation.version>
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+        <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
+        <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
     </properties>
 
     <modules>
@@ -174,5 +200,24 @@
         </dependencies>
     </dependencyManagement>
 
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven-deploy-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>${central-publishing-maven-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                    <waitUntil>published</waitUntil>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

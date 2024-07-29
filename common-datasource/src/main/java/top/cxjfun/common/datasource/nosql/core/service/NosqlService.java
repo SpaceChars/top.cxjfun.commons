@@ -1,11 +1,5 @@
 package top.cxjfun.common.datasource.nosql.core.service;
 
-import com.baomidou.mybatisplus.extension.toolkit.SqlHelper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -57,7 +51,7 @@ public interface NosqlService<T> {
 
     default T findById(Object id) {
         List<T> list = this.findByIds(id);
-        return list.size() > 0 ? list.get(0) : null;
+        return !list.isEmpty() ? list.get(0) : null;
     }
 
     default List<T> findByIds(Object... ids) {
