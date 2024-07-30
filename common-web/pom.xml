@@ -11,13 +11,8 @@
     </parent>
 
     <artifactId>cxjfun-commons-web</artifactId>
-    <name>cxjfun-commons-web</name>
-    <description>web模块</description>
-
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+    <name>Commons Web Module</name>
+    <description>The web tools module in the top.cxjfun common dependency library</description>
 
     <dependencies>
 

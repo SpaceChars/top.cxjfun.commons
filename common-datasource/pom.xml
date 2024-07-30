@@ -10,13 +10,8 @@
     </parent>
 
     <artifactId>cxjfun-commons-datasource</artifactId>
-    <name>cxjfun-commons-datasource</name>
-    <description>数据库模块</description>
-
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+    <name>Commons Datasource Module</name>
+    <description>The datasource module in the top.cxjfun common dependency library</description>
 
     <dependencies>
 
